@@ -141,9 +141,9 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
         //设置文本
         tvDesc.setText(contentDescs[newPosition]);
-        //更新指示器(该方法还存在问题)
+        //更新指示器(两种方法择一即可)
 //        for(int i = 0; i < llPointContainer.getChildCount(); i++){
-//            View childAt = llPointContainer.getChildAt(newPosition);
+//            View childAt = llPointContainer.getChildAt(i);
 //            childAt.setEnabled(newPosition == i);
 //        }
         //把之前的禁用，把最新的启用，更新指示器
